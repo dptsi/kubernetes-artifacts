@@ -28,7 +28,8 @@ spec:
     spec:
       containers:
       - name: wso2as-manager
-        image: wso2as-manager-kubernetes:5.3.0
+        image: dptsi/wso2as-manager-kubernetes:5.3.0-build-18
+        imagePullPolicy: Always 
         env:
         -
           name: KUBERNETES_MASTER_SKIP_SSL_VERIFICATION
